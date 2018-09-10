@@ -1,4 +1,5 @@
 # PythonStudy
 Personal study =D
 
-Aprendiendo git y python.
+Aprendiendo git y python
+
