@@ -1,28 +1,27 @@
 class coche():
 
     "Constructor"
-    def __init__ (self): 
-        "propiedades"
-        self.largoChasis=250
-        self.anchoChasis=120
-        "encapsular variable o propiedad"
+    def __init__ (self):
+        "encapsular viariables o propiedades"
+        self.__largoChasis=250
+        self.__anchoChasis=120
         self.__ruedas=4
-        self.enmarcha=False
+        self.__enmarcha=False
     
     "comportamientos o metodos: defs (metodo o funcion especial de la clase)"
     "def es una funcion que no pertenece a la clase"
 
     def arrancar (self, arrancamos):
-        self.enmarcha=arrancamos
+        self.__enmarcha=arrancamos
 
-        if(self.enmarcha):
+        if(self.__enmarcha):
             return "El coche esta en marcha"
         else:
             return "El coche esta parado"
 
     def estado (self):
-        print("El largo del coche es: ",self.largoChasis,"El ancho del coche es: ", self.anchoChasis,
-         "El coche tiene: ", self.ruedas, "ruedas")
+        print("El largo del coche es: ",self.__largoChasis,"El ancho del coche es: ", self.__anchoChasis,
+         "El coche tiene: ", self.__ruedas, "ruedas")
 
 miCoche=coche()
 
@@ -35,7 +34,7 @@ print("---------- A continuación creamos el segundo objeto ----------")
 cocheDaniel=coche()
 print(cocheDaniel.arrancar(False))
 
-cocheDaniel.ruedas=2
+cocheDaniel.__ruedas=2
 
 cocheDaniel.estado()
 
