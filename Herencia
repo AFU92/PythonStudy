@@ -1,0 +1,58 @@
+Herencia
+
+trasladar el comportamiento de una clase
+
+clase 1: Clase padre o super clase
+
+    clase 2: Clase padre y subclase
+
+        clase 3: subclase
+
+        clase 4: subclase
+
+        clase 5: subclase
+
+
+¿Para que sirve?
+
+    Para reutilizar codigo en caso de crear objetos similares
+
+
+Ejemplo:
+
+    - Crear coches
+
+    - Crear camion 
+
+    - Crear Moto
+
+    - Crear Bus
+
+
+¿Caracteristicas en comun de todos los objetos?
+
+    - Marca
+
+    - Modelo
+
+¿Comportamientos en comun?
+
+    - Arrancan
+
+    - Aceleran
+
+    - Frenan
+
+
+Entonces se construye una clase padre o super clase con las caracteristicas y comportamientos en comun.
+
+Pero cada objeto tendra caracteristicas y comportamientos diferentes 
+
+
+
+CONCLUSION
+
+Estos objetos son similares entre si y caracteristicas propias que los hacen unicos
+    - Entonceson se crea una clase con comportamientos comunes
+    - Se crean una clase para cada uno de esos objetos con las caracteristicas y comportamientos unicos de cada uno de ellos
+
