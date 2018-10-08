@@ -36,9 +36,11 @@ class Furgoneta (vehiculo):
         else:
             return "La furgoneta no esta cargada"
 
-class vehi_electricos():
+class vehi_electricos(vehiculo):
 
-    def __init__(self):
+    def __init__(self, marca, modelo):
+
+        super().__init__(marca,modelo)
 
         self.autonomia=100
 
@@ -72,9 +74,8 @@ miFurgoneta.estado()
 
 print(miFurgoneta.cargar(True))
 
-
 class BicicletaElectrica (vehi_electricos, vehiculo):
 
     pass 
 
-miBiciElectrica=BicicletaElectrica()
+miBiciElectrica=BicicletaElectrica("abc", "123")
